@@ -1,0 +1,24 @@
+{% load static %}
+<header>
+  <a class="logo" href="/itech"><img src="{% static '/itech/assets/img/logoitech.png' %}" alt="logo"></a>
+  <nav>
+      <ul class="nav__links">
+          <li><a href="/itech">Home</a></li>
+          <li><a href="/itech/about">Tentang</a></li>
+          <li><a href="/itech/juknis">Juknis</a></li>
+          <li><a href="/itech/timeline">Timeline</a></li>
+      </ul>
+  </nav>
+  <a class="cta1" href="/itech/daftar">Daftar</a>
+  <p class="menu cta1">Menu</p>
+</header>
+<div class="overlay">
+  <a class="close">&times;</a>
+  <div class="overlay__content">
+      <a href="/itech">Home</a>
+      <a href="/itech/daftar">Daftar</a>
+      <a href="/itech/about">Tentang</a>
+      <a href="/itech/juknis">Juknis</a>
+      <a href="/itech/timeline">Timeline</a>
+  </div>
+</div>

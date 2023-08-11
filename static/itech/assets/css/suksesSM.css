@@ -1,0 +1,26 @@
+.bg-img {
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 25px;
+  color: white;
+}
+
+@media (max-width: 1000px) {
+  h3 {
+    font-size: 25px;
+  }
+  .container {
+    max-width: 100%;
+  }
+}

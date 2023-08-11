@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>{% block title %} {% endblock %}</title>
+  <meta name="description" content="Ajang untuk menyalurkan hobi dan berkreasi bersama">
+  <meta name="keywords"
+    content="esports, game, game portal, Game website, gamer, games, gaming, match, modern, online game, sport, sports, design, i tech, itech, kompetisi, kreatifitas, lomba, man 4" />
+  <meta name="author" content="Fazil Tirtana" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Add site Favicon -->
+  <link rel="shortcut icon" href="{% static '/itech/assets/img/favicon.ico' %}" type="image/png" />
+
+  <!-- CSS 
+    ========================= -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Metal+Mania&display=swap"
+    rel="stylesheet" />
+
+  <!-- Main Style CSS -->
+  <link rel="stylesheet" href="{% static '/itech/assets/css/about.css' %}" />
+  <link rel="stylesheet" href="{% static '/itech/assets/css/navbar.css' %}" />
+  <link rel="stylesheet" href="{% static '/itech/assets/css/footer.css' %}" />
+  <link rel="stylesheet" href="{% static '/itech/assets/css/home.css' %}" />
+  <link rel="stylesheet" href="{% static '/itech/assets/css/daftar.css' %}" />
+  <link rel="stylesheet" href="{% static '/itech/assets/css/juknis.css' %}" />
+
+  <link rel="stylesheet" href="{% static '/itech/assets/css/timeline.css' %}">
+  <link rel="stylesheet" href="{% static '/itech/assets/css/daftar.css' %}">
+</head>
+
+<body class="body__bg" data-bgimg="{% block body-bg %} {% endblock %}">
+
+  {% block content %} {% endblock %}
+
+  <script src="{% static '/itech/assets/js/mobilenavbar.js' %}"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+</body>
+
+</html>

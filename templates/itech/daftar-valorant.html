@@ -1,0 +1,115 @@
+{% extends 'itech/base.html' %}
+{% load static %}
+
+{% block title %}
+I-Tech | Daftar Valorant
+{% endblock %}
+
+{% block body-bg %}
+{% static '/itech/assets/img/bg/body-bg2.webp' %}
+{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static '/itech/assets/css/stylevalo.css' %}">
+<span>Daftar</span>
+
+<div>
+  <h1>DAFTAR VALORANT</h1>
+  <form method="POST" action="" enctype="multipart/form-data">
+    {% csrf_token %}
+    <fieldset>
+      <div class="inputcontainer">
+        <label for="user">Nama Tim</label>
+        {{ form.Nama_Tim }}
+      </div>
+
+      <div class="inputcontainer">
+        <label for="Kontak">No.WA dan LINE</label>
+        {{ form.Nomor_Whatsapp_dan_Line }}
+      </div>
+
+      <div class="inputcontainer">
+        <label for="Player1">Player 1</label>
+        {{ form.Player_1 }}
+      </div>
+
+      <div class="inputcontainer">
+        <label for="Player1">Nama Lengkap</label>
+        {{ form.Nama_Lengkap_atau_Nama_Asli_1 }}
+      </div>
+
+      <div class="inputcontainer">
+        <label for="Player1">Player 2</label>
+        {{ form.Player_2 }}
+      </div>
+
+      <div class="inputcontainer">
+        <label for="Player1">Nama Lengkap</label>
+        {{ form.Nama_Lengkap_atau_Nama_Asli_2 }}
+      </div>
+
+      <div class="inputcontainer">
+        <label for="Player1">Player 3</label>
+        {{ form.Player_3 }}
+      </div>
+
+      <div class="inputcontainer">
+        <label for="Player1">Nama Lengkap</label>
+        {{ form.Nama_Lengkap_atau_Nama_Asli_3 }}
+      </div>
+
+      <div class="inputcontainer">
+        <label for="Player1">Player 4</label>
+        {{ form.Player_4 }}
+      </div>
+
+      <div class="inputcontainer">
+        <label for="Player1">Nama Lengkap</label>
+        {{ form.Nama_Lengkap_atau_Nama_Asli_4 }}
+      </div>
+
+      <div class="inputcontainer">
+        <label for="Player1">Player 5</label>
+        {{ form.Player_5 }}
+      </div>
+
+      <div class="inputcontainer">
+        <label for="Player1">Nama Lengkap</label>
+        {{ form.Nama_Lengkap_atau_Nama_Asli_5 }}
+      </div>
+
+      <div class="inputcontainer">
+        <label for="Player1">Player 6</label>
+        {{ form.Player_6 }}
+      </div>
+
+      <div class="inputcontainer">
+        <label for="Player1">Nama Lengkap</label>
+        {{ form.Nama_Lengkap_atau_Nama_Asli_6 }}
+      </div>
+
+      <div>
+        <h4 style="margin: 2rem 0; color: rgb(255, 255, 255);">
+          Lomba Valorant dikenakan biaya sebesar 💳: Rp60.000/team
+          Silahkan melakukan pembayaran melalui rekening berikut: BCA 4730717186 a.n Puti Nazzura Lutfia
+          </br>
+          </br>
+          NOTE: silahkan gabung ke link group WhatsApp yang disediakan SETELAH submit Form ini
+        </h4>
+      </div>
+
+      <div class="inputcontainer">
+        <label for="Kontak">Bukti transaksi</label>
+        {{ form.Bukti_Transaksi }}
+      </div>
+
+      <div class="inputcontainer submitcontainer">
+        <input type="submit" value="Daftar" />
+      </div>
+
+    </fieldset>
+  </form>
+</div>
+
+<script src="{% static '/itech/assets/js/valo.js' %}"></script>
+{% endblock %}

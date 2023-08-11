@@ -1,0 +1,55 @@
+{% extends 'itech/base.html' %}
+{% load static %}
+
+{% block title %}
+I-Tech | Timeline
+{% endblock %}
+
+{% block body-bg %}
+{% static '/itech/assets/img/bg/body-bg2.webp' %}
+{% endblock %}
+
+{% block content %}
+{% include 'itech/navbar.html' %}
+<link href="https://fonts.googleapis.com/css?family=Poppins:900i">
+<div class="bg-img" style="background-image: url({% static '/itech/assets/img/bg-4.png' %}); padding: 8rem 0 2rem 0;">
+
+  <!-- page wrapper start -->
+  <div class="page_wrapper">
+    <section class="game_details_section mb-125">
+      <div class="container">
+
+        <div class="section_title text-center wow fadeInUp mb-60" data-wow-delay="0.1s" data-wow-duration="1.1s">
+          <h2 style="margin-bottom: 1rem;">
+            TIMELINE VALORANT
+          </h2>
+        </div>
+        <div>
+          <img class="wow fadeInUp" src="{% static '/itech/assets/img/Timeline-VALORANT-PUTIH-I-Tech-23.png' %}">
+        </div>
+
+        <div class="section_title text-center wow fadeInUp mb-60" data-wow-delay="0.1s" data-wow-duration="1.1s"
+          style="margin-top: 8rem;">
+          <h2 style="margin-bottom: 1rem;">
+            TIMELINE SHORT MOVIE
+          </h2>
+        </div>
+        <div>
+          <img class="wow fadeInUp" src="{% static '/itech/assets/img/Timeline-SHORTMOV-PUTIH-I-Tech-23.png' %}">
+        </div>
+
+        <div class="section_title text-center wow fadeInUp mb-60" data-wow-delay="0.1s" data-wow-duration="1.1s"
+          style="margin-top: 8rem;">
+          <h2 style="margin-bottom: 1rem;">
+            TIMELINE POSTER
+          </h2>
+        </div>
+        <div>
+          <img class="wow fadeInUp" src="{% static '/itech/assets/img/Timeline-POSTER-PUTIH-I-Tech-23.png' %}">
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+{% include 'itech/footer.html' %}
+{% endblock %}

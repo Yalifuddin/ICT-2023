@@ -1,0 +1,71 @@
+{% extends 'itech/base.html' %}
+{% load static %}
+
+{% block title %}
+I-Tech | Daftar Short Movie
+{% endblock %}
+
+{% block body-bg %}
+{% static '/itech/assets/img/bg/body-bg2.webp' %}
+{% endblock %}
+
+{% block content %}
+
+<link rel="stylesheet" href="{% static '/itech/assets/css/styleSM.css' %}">
+<span>Daftar</span>
+
+<div>
+  <h1>DAFTAR SHORT MOVIE</h1>
+  <form method="POST" action="" enctype="multipart/form-data">
+    {% csrf_token %}
+    <fieldset>
+      <div class="inputcontainer">
+        <label for="user">Nama Tim</label>
+        {{ form.Nama_Tim }}
+      </div>
+
+      <div class="inputcontainer">
+        <label for="user">Asal Sekolah</label>
+        {{ form.Asal_Sekolah }}
+      </div>
+
+      <div class="inputcontainer">
+        <label for="user">Nama Perwakilan</label>
+        {{ form.Nama_Perwakilan }}
+      </div>
+
+      <div class="inputcontainer">
+        <label for="Kontak">No.WA dan LINE Perwakilan</label>
+        {{ form.Nomor_Whatsapp_dan_Line }}
+      </div>
+
+      <div class="inputcontainer">
+        <label for="Player1">Nama Lengkap Anggota [pisahkan dengan tanda koma (,)]</label>
+        {{ form.Nama_Anggota }}
+      </div>
+
+      <div>
+        <h4 style="margin: 2rem 0; color: rgb(255, 255, 255);">
+          Lomba Short Movie dikenakan biaya sebesar 💳: Rp60.000/team
+          Silahkan melakukan pembayaran melalui rekening berikut: BCA 4730717186 a.n Puti Nazzura Lutfia
+          </br>
+          </br>
+          NOTE: silahkan gabung ke link group WhatsApp yang disediakan SETELAH submit Form ini
+        </h4>
+      </div>
+
+      <div class="inputcontainer">
+        <label for="Kontak">Bukti transaksi</label>
+        {{ form.Bukti_Transaksi }}
+      </div>
+
+      <div class="inputcontainer submitcontainer">
+        <input type="submit" value="Daftar" />
+      </div>
+
+    </fieldset>
+  </form>
+</div>
+
+<script src="{% static '/itech/assets/js/SM.js' %}"></script>
+{% endblock %}

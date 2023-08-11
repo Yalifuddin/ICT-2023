@@ -1,0 +1,41 @@
+{% extends 'itech/base.html' %}
+{% load static %}
+
+{% block title %}
+I-Tech | Tentang
+{% endblock %}
+
+{% block body-bg %}
+{% static '/itech/assets/img/bg/body-bg2.webp' %}
+{% endblock %}
+
+{% block content %}
+{% include 'itech/navbar.html' %}
+
+<!-- partial:index.partial.html -->
+
+<!-- partial:index.partial.html -->
+<div class="bg1" style="background-image: url({% static '/itech/assets/img/bg1lengkap.png' %}); padding-top: 5rem;">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:900i" rel="stylesheet">
+
+  <div class="title">
+    <h4>TENTANG I-TECH</h4>
+  </div>
+  <div class="dialog outer">
+    <div class="dialog inner">
+      Apa itu ITECH 2023?
+      ITECH adalah ajang lomba tahunan yang diadakan oleh ekskul ICT MAN 4 Jakarta yang bersamaan dengan BOFMAN Part 14.
+      Dan seperti pada tahun sebelumnya, ITECH pada tahun ini juga mengadakan lomba pertandingan game online Valorant,
+      Shortmovie, serta adanya lomba pembuatan Poster Digital yang baru diadakan tahun ini yang mengusung tema "Escaping
+      Technological Isolation". Tujuan dilaksanakannya pada tahun ini, ialah untuk menyalurkan hobi serta mengembangkan
+      minat dan mutu secara kompetitif. </div>
+  </div>
+
+  <div class="title">
+    <h4>TRAILER I-TECH</h4>
+    <video controls src="{% static '/itech/assets/img/iTECH2023.1.mp4' %}" width="500"></video>
+  </div>
+</div>
+{% include 'itech/footer.html' %}
+
+{% endblock %}

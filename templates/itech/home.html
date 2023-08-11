@@ -1,0 +1,179 @@
+{% extends 'itech/base.html' %}
+{% load static %}
+
+{% block title %}
+I-Tech | Home
+{% endblock %}
+
+{% block body-bg %}
+{% static '/itech/assets/img/bg/body-bg.webp' %}
+{% endblock %}
+
+{% block content %}
+    <!-- partial:index.partial.html -->
+    <div id="main">
+      <div class="joker">
+          <div class="content-wrapper">
+              <nav id="main-menu">
+                  <ul>
+                      <a href="/itech/about">
+                          <li data-description="tentang i-tech 2023" data-number="1">
+
+                              <span class="literal"><span class="ag">A</span><span class="tnr">b</span><span
+                                      class="mayus reverse rl smaller">o</span><span class="rr">u</span>t</span>
+                              <div class="shape-wrapper">
+                                  <div class="shape red-fill jelly">
+                                      <svg x="0px" y="0px" viewBox="0 0 108.1 47"
+                                          enable-background="new 0 0 108.1 47">
+                                          <polygon fill="#FF0000" points="29.5,8.5 150.7,0 108.1,32.7 3.1,47 ">
+                                          </polygon>
+                                      </svg>
+                                  </div>
+                                  <div class="shape cyan-fill jelly">
+                                      <svg x="0px" y="0px" viewBox="0 0 108.1 47"
+                                          enable-background="new 0 0 108.1 47">
+                                          <polygon fill="#00FFFF" points="0.3,17 125.1,0 68.8,45.6 24.3,39 ">
+                                          </polygon>
+                                      </svg>
+                                  </div>
+                              </div>
+
+                          </li>
+                      </a>
+                      <a href="/itech/daftar">
+                          <li data-description="click untuk pendaftaran lomba-lomba itech 2023" data-number="2">
+                              <span class="literal"><span class="tnr rl">d</span><span
+                                      class="mayus reverse kn smaller">a</span><span class="rr">f</span><span
+                                      class="tnr reverse rl">t</span><span class="tnr">a</span><span
+                                      class="mayus">r</span>
+                                  <div class="shape-wrapper">
+                                      <div class="shape red-fill jelly">
+                                          <svg x="0px" y="0px" viewBox="0 0 108.1 47"
+                                              enable-background="new 0 0 108.1 47">
+                                              <polygon fill="#FF0000" points="29.5,8.5 150.7,0 108.1,32.7 3.1,47 ">
+                                              </polygon>
+                                          </svg>
+                                      </div>
+                                      <div class="shape cyan-fill jelly">
+                                          <svg x="0px" y="0px" viewBox="0 0 108.1 47"
+                                              enable-background="new 0 0 108.1 47">
+                                              <polygon fill="#00FFFF" points="0.3,17 125.1,0 68.8,45.6 24.3,39 ">
+                                              </polygon>
+                                          </svg>
+                                      </div>
+                                  </div>
+                          </li>
+                      </a>
+                      <a href="/itech/juknis">
+                      <li data-description="juknis perlombaan itech 2023" data-number="3">
+                          <span class="literal">j<span class="cooper">u</span><span class="tnr mayus rl">k</span><span
+                                  class="reverse">n</span><span class="mayus rr">i</span>s<span class="tnr mayus">
+                                  <div class="shape-wrapper">
+                                      <div class="shape red-fill jelly">
+                                          <svg x="0px" y="0px" viewBox="0 0 108.1 47"
+                                              enable-background="new 0 0 108.1 47">
+                                              <polygon fill="#FF0000" points="29.5,8.5 150.7,0 108.1,32.7 3.1,47 ">
+                                              </polygon>
+                                          </svg>
+                                      </div>
+                                      <div class="shape cyan-fill jelly">
+                                          <svg x="0px" y="0px" viewBox="0 0 108.1 47"
+                                              enable-background="new 0 0 108.1 47">
+                                              <polygon fill="#00FFFF" points="0.3,17 125.1,0 68.8,45.6 24.3,39 ">
+                                              </polygon>
+                                          </svg>
+                                      </div>
+                                  </div>
+                      </li>
+                      </a>
+                      <a href="/itech/timeline">
+                      <li data-description="linimasa i-tech 2023" data-number="4">
+                          <span class="literal"><span class="tnr">T</span>i<span
+                                  class="mayus reverse kn smaller">m</span><span class="rl">E</span><span
+                                  class="mayus">L</span><span class="rl smaller">i</span>ne<span
+                                  class="mayus smaller">
+                                  <div class="shape-wrapper">
+                                      <div class="shape red-fill jelly">
+                                          <svg x="0px" y="0px" viewBox="0 0 108.1 47"
+                                              enable-background="new 0 0 108.1 47">
+                                              <polygon fill="#FF0000" points="29.5,8.5 150.7,0 108.1,32.7 3.1,47 ">
+                                              </polygon>
+                                          </svg>
+                                      </div>
+                                      <div class="shape cyan-fill jelly">
+                                          <svg x="0px" y="0px" viewBox="0 0 108.1 47"
+                                              enable-background="new 0 0 108.1 47">
+                                              <polygon fill="#00FFFF" points="0.3,17 125.1,0 68.8,45.6 24.3,39 ">
+                                              </polygon>
+                                          </svg>
+                                      </div>
+                                  </div>
+                      </li>
+                      <!-- <li data-description="frequently asked question" data-number="5">
+                          <span class="literal"><span class="rl tnr">F</span><span class="cooper rr">a</span><span
+                                  class="tnr mayus smaller rr">q</span>
+                              <div class="shape-wrapper">
+                                  <div class="shape red-fill jelly">
+                                      <svg x="0px" y="0px" viewBox="0 0 108.1 47"
+                                          enable-background="new 0 0 108.1 47">
+                                          <polygon fill="#FF0000" points="29.5,8.5 150.7,0 108.1,32.7 3.1,47 ">
+                                          </polygon>
+                                      </svg>
+                                  </div>
+                                  <div class="shape cyan-fill jelly">
+                                      <svg x="0px" y="0px" viewBox="0 0 108.1 47"
+                                          enable-background="new 0 0 108.1 47">
+                                          <polygon fill="#00FFFF" points="0.3,17 125.1,0 68.8,45.6 24.3,39 ">
+                                          </polygon>
+                                      </svg>
+                                  </div>
+                              </div>
+                      </li> -->
+                      <!--li class="thieves-den" data-description="Ir a la guarida de los ladrones" data-number="10">
+                              <span class="literal"><span class="cooper rl">G</span><span class="rl">u</span><span class="mayus rl">a</span><span class="cooper mayus">r</span><span class="tnr reverse kn">i</span><span class="mayus smaller">d</span><span class="tnr reverse mayus smaller">a</span> d<span class="tnr mayus">e</span> <span class="mayus rr">l</span>o<span class="mayus">s</span> <span class="mayus rl tnr">l</span><span class="mayus rr">a</span>d<span class="mayus tnr">r</span><span class="rl">o</span><span class="rr">n</span><span class="rl mayus">e</span><span class="rl mayus tnr">s</span></span>
+                              <div class="shape-wrapper">
+                                <div class="shape red-fill jelly">
+                                    <svg x="0px" y="0px" viewBox="0 0 108.1 47" enable-background="new 0 0 108.1 47">
+                                        <polygon fill="#FF0000" points="29.5,8.5 150.7,0 108.1,32.7 3.1,47 "></polygon>
+                                    </svg>
+                                </div>
+                                <div class="shape cyan-fill jelly">
+                                    <svg x="0px" y="0px" viewBox="0 0 108.1 47" enable-background="new 0 0 108.1 47">
+                                        <polygon fill="#00FFFF" points="0.3,17 125.1,0 68.8,45.6 24.3,39 "></polygon>
+                                    </svg>
+                                </div>
+                              </div>
+                          </li-->
+                  </ul>
+              </nav>
+              <div class="action">
+                  <div class="title">I<span class="tnr">-</span><span
+                          class="tnr mayus reverse kn smaller">T</span><span class="shadow rl">E</span><span
+                          class="shadow tnr reverse">C</span><span class="tnr mayus rl">H</span></div>
+                  <div class="description"><span class="wrapper">I-TECH 2023!
+
+                      </span></div>
+              </div>
+              <div class="money">3.177</div>
+          </div>
+      </div>
+      <div class="stetic-text">
+          <div class="slogan">
+              <!-- <span class="first"><span class="minus tnr">?</span><span class="ag">o</span> <span class="ag">m</span><span class="mayus rr">e</span> <span class="mayus reverse shadow tnr">m</span><span>i</span><span class="mayus">r</span><span class="rl">e</span><span class="tnr">s</span></span> -->
+              <!-- <span class="second"><span>a<span class="tnr mayus">s</span><span class="rr">í</span></span></span> -->
+          </div>
+          <!-- <div class="team-name"><span class="wrapper"><span class="content">isi apa cok</span></span></div>
+              <div class="menu-info"> -->
+          <!-- <span class="menu-title"><span class="wrapper"><span class="ag">M</span><span class="rl">e</span><span class="mayus tnr rr">n</span>ú:<span class="ag">P</span><span class="rl">r</span><span class="rr">i</span><span class="mayus">n</span>ci<span class="mayus">p</span><span class="reverse shadow">a</span><span class="rr">l</span></span></span> -->
+          <!-- <span class="menu-description">Elig<span class="mayus">e</span> u<span class="mayus">n</span>a <span class="mayus">a</span>c<span class="mayus">c</span>i<span class="mayus">ón</span></span> -->
+      </div>
+      <div class="current-item">
+          <span class="first"><span class="wrapper"><span class="content">0</span></span></span>
+          <span class="second"><span class="wrapper"><span class="content"><span
+                          class="number">1</span></span></span></span>
+      </div>
+  </div>
+  </div>
+  <!-- partial -->
+  <script src="{% static '/itech/assets/js/home.js' %}"></script>
+{% endblock %}
